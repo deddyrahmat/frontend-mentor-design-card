@@ -1,4 +1,4 @@
-# :bell: Welcome to My project WaysBook :bell:
+# :bell: Welcome to My project Component Card From Frontend Mentor :bell:
 
 Hello All, My name is Deddy Rahmat <br />
 I am a Frontend Developer
