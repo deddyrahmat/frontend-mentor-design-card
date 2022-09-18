@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-dark-cyan : hsl(158, 36%, 37%);
+    --primary-cream : hsl(30, 38%, 92%);
+    --primary-dark-blue : hsl(212, 21%, 14%);
+    --primary-dark-grayish-blue : hsl(228, 12%, 48%);
+    --primary-white : hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primary-cream);
+}
+
+.font-fraunces {
+    font-family: 'Fraunces', serif;
+}
+
+.paragraph {
+    font-size: 14px;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 375px;
+    border-radius: 14px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: var(--primary-white);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    width: 375px;
+}
+
+.img-fluid {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-body {
+    padding: 10px 15px;
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-category, .card-text {
+    color: var(--primary-dark-grayish-blue);
+}
+
+.card-text {
+    line-height: 25px;
+}
+
+.card-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-discount {
+    color: var(--primary-dark-cyan);
+    font-size: 32px;
+    font-weight: bold;
+    margin : 14px 0;
+}
+
+.price-not-discount {
+    text-decoration: line-through;
+    color: var(--primary-dark-grayish-blue);
+}
+
+.card-btn {
+    background-color: var(--primary-dark-cyan);
+    width: 100%;
+    border-radius: 12px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.card-btn:hover {
+    background-color: var(--primary-dark-blue);
+}
+
+.img-cart {
+    width: 14px;
+}
+
+.img-desktop {
+    display: none;
+}
+
+.btn-text {
+    color: var(--primary-white);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+@media (min-width : 1440px) {
+    .card {
+        width: 768px;
+        height: 450px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card-img, .card-body {
+        width: 384px;
+    }
+
+    .img-desktop {
+        display: block;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+}
